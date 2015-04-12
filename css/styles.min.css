@@ -105,6 +105,13 @@ table {
     .layout .layout__sub-title p {
       font-weight: 300px;
       font-size: 12px; }
+  .layout .layout__center {
+    height: 100%; }
+  .layout .layout__cards-container {
+    margin-left: 10%;
+    width: 90%;
+    height: calc( 100% - 200px );
+    overflow-y: auto; }
 
 header {
   width: 100%;
@@ -180,6 +187,44 @@ header {
       border: 1px solid #BBBDC0; }
     .buttons .buttons__main-option:first-child {
       margin-top: 2em; }
+  .buttons .buttons__select-medium {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 60px 12px 60px;
+    color: white;
+    background-color: #3DA7DC;
+    cursor: pointer;
+    min-width: 40px;
+    text-align: center; }
+    .buttons .buttons__select-medium:hover {
+      color: white;
+      background: #9CCB3B; }
+  .buttons .buttons__back {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 60px 12px 60px;
+    color: white;
+    background-color: #ED1B2D;
+    cursor: pointer;
+    min-width: 40px;
+    text-align: center; }
+    .buttons .buttons__back:hover {
+      color: white;
+      background: #9CCB3B; }
   .buttons .buttons__main-alternative {
     border: 1px solid #BBBDC0;
     background-color: white;
@@ -213,6 +258,32 @@ header {
     width: 350px;
     margin-left: calc( 50% - ( 350px / 2));
     margin-top: 10px; }
+  .card.card--template {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 450px;
+    margin: 20px 10px 10px 10px; }
+    .card.card--template h3, .card.card--template p, .card.card--template h4, .card.card--template h2 {
+      font-weight: 400;
+      margin-left: 15px; }
+    .card.card--template h2 {
+      margin-top: 10px;
+      font-size: 22px; }
+    .card.card--template h3 {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #3DA7DC; }
+    .card.card--template p {
+      margin-top: 10px;
+      font-size: 12px; }
+    .card.card--template h4 {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 500; }
+  .card .card__image {
+    width: 100%;
+    height: auto; }
 
 body, html {
   height: 100%;

@@ -72,4 +72,15 @@
 			font-size: $font-small;
 		}
 	}
+
+	.layout__center {
+		height: 100%;
+	}
+
+	.layout__cards-container {
+		margin-left: 10%;
+		width: 90%;
+		height: calc( 100% - 200px );
+		overflow-y: auto;
+	}
 }

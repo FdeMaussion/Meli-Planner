@@ -68,6 +68,50 @@
     }
   }
 
+  .buttons__select-medium {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-family: $font-roboto;
+    font-weight: 500;
+    font-size: $font-medium;
+    padding: $text-big-padding;
+    color: white;
+    background-color: $option;
+    cursor: pointer;
+    min-width: 40px;
+    text-align: center;
+    &:hover {
+      color: white;
+      background: $positive;
+    }
+  }
+
+  .buttons__back {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-family: $font-roboto;
+    font-weight: 500;
+    font-size: $font-medium;
+    padding: $text-big-padding;
+    color: white;
+    background-color: $intense;
+    cursor: pointer;
+    min-width: 40px;
+    text-align: center;
+    &:hover {
+      color: white;
+      background: $positive;
+    }
+  }
+
   .buttons__main-alternative {
       border: $border__clear;
       background-color: white;
