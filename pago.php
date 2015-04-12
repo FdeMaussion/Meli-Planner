@@ -23,6 +23,7 @@ $preference = $mp->create_preference ($preference_data);
         <title>Pagar</title>
     </head>
     <body>
+        AAA
         <a href="<?php echo $preference['response']['sandbox_init_point']; ?>">Pagar</a>
     </body>
 </html>

@@ -27,180 +27,27 @@
 					<label>3</label>
 				</div>
 				<div class="layout__title">
-					<h2>Elige alguno de los eventos ya diseñados</h2>
+					<h2>Configura tu evento o elige entre los creados por otros usuarios</h2>
 				</div>
-				<div class="layout__sub-title buttons">
-					<a href="#" class="buttons__back">Crea tu propio evento</a>
-				</div>
-				<div class="layout__cards-container">
-					<!-- Card Start -->
-					<div class="card card--template">
-						<img class="card__image" src="img/template_example_1.jpg" />
-						<div class="">
-							<h3>Fiesta Vikinga</h3>
-							<p>Espectacular para tus amigos metaleros cabeza</p>
-							<h4>Empezando en</h4>
-							<h2>$4500</h2>
-							<h4>Planner</h4>
-							<p>MeliPlanner</p>
-						</div>
-						<div class="card__votes">
-							<div class="card__vote-positive"></div>
-							<div class="card__vote-negative"></div>
-						</div>
-						<div class="buttons">
-							<a href="#" class="buttons__select-medium">Elegir</a>
-						</div>
-					</div>
-					<!-- Card End -->
-					
-					<!-- Card Start -->
-					<div class="card card--template">
-						<img class="card__image" src="img/template_example_1.jpg" />
-						<div class="">
-							<h3>Fiesta Vikinga</h3>
-							<p>Espectacular para tus amigos metaleros cabeza</p>
-							<h4>Empezando en</h4>
-							<h2>$4500</h2>
-							<h4>Planner</h4>
-							<p>MeliPlanner</p>
-						</div>
-						<div class="card__votes">
-							<div class="card__vote-positive"></div>
-							<div class="card__vote-negative"></div>
-						</div>
-						<div class="buttons">
-							<a href="#" class="buttons__select-medium">Elegir</a>
-						</div>
-					</div>
-					<!-- Card End -->
+				<div class="card card--create">
+					<form class="" action="lista-invitados.php" method="post">
 
-					<!-- Card Start -->
-					<div class="card card--template">
-						<img class="card__image" src="img/template_example_1.jpg" />
-						<div class="">
-							<h3>Fiesta Vikinga</h3>
-							<p>Espectacular para tus amigos metaleros cabeza</p>
-							<h4>Empezando en</h4>
-							<h2>$4500</h2>
-							<h4>Planner</h4>
-							<p>MeliPlanner</p>
-						</div>
-						<div class="card__votes">
-							<div class="card__vote-positive"></div>
-							<div class="card__vote-negative"></div>
-						</div>
-						<div class="buttons">
-							<a href="#" class="buttons__select-medium">Elegir</a>
-						</div>
-					</div>
-					<!-- Card End -->
+						<label for="titulo">Titulo Evento</label>
+            			<input class="card__input-title" name="titulo" id="titulo" type="text">
 
-					<!-- Card Start -->
-					<div class="card card--template">
-						<img class="card__image" src="img/template_example_1.jpg" />
-						<div class="">
-							<h3>Fiesta Vikinga</h3>
-							<p>Espectacular para tus amigos metaleros cabeza</p>
-							<h4>Empezando en</h4>
-							<h2>$4500</h2>
-							<h4>Planner</h4>
-							<p>MeliPlanner</p>
+            			<label for="fecha-evento">¿Cuando es el evento?</label>
+            			<input name="fecha-evento"id="fecha-evento" type="date">
+            
+            			<label for="fecha-fin-crowd">¿Hasta cuando hay tiempo para juntar el dinero?</label>
+            			<input name="fecha-fin-crowd" id="fecha-fin-crowd" type="date">
+            			<input name="evento" id="" value="cosa" type="radio">
+            		
+            			<div class="buttons">
+							<input class="buttons__select-submit" name="submit" id="submit" type="submit" value="Continuar">
 						</div>
-						<div class="card__votes">
-							<div class="card__vote-positive"></div>
-							<div class="card__vote-negative"></div>
-						</div>
-						<div class="buttons">
-							<a href="#" class="buttons__select-medium">Elegir</a>
-						</div>
-					</div>
-					<!-- Card End -->
+        			</form>
+        		</div>
 
-					<!-- Card Start -->
-					<div class="card card--template">
-						<img class="card__image" src="img/template_example_1.jpg" />
-						<div class="">
-							<h3>Fiesta Vikinga</h3>
-							<p>Espectacular para tus amigos metaleros cabeza</p>
-							<h4>Empezando en</h4>
-							<h2>$4500</h2>
-							<h4>Planner</h4>
-							<p>MeliPlanner</p>
-						</div>
-						<div class="card__votes">
-							<div class="card__vote-positive"></div>
-							<div class="card__vote-negative"></div>
-						</div>
-						<div class="buttons">
-							<a href="#" class="buttons__select-medium">Elegir</a>
-						</div>
-					</div>
-					<!-- Card End -->
-
-					<!-- Card Start -->
-					<div class="card card--template">
-						<img class="card__image" src="img/template_example_1.jpg" />
-						<div class="">
-							<h3>Fiesta Vikinga</h3>
-							<p>Espectacular para tus amigos metaleros cabeza</p>
-							<h4>Empezando en</h4>
-							<h2>$4500</h2>
-							<h4>Planner</h4>
-							<p>MeliPlanner</p>
-						</div>
-						<div class="card__votes">
-							<div class="card__vote-positive"></div>
-							<div class="card__vote-negative"></div>
-						</div>
-						<div class="buttons">
-							<a href="#" class="buttons__select-medium">Elegir</a>
-						</div>
-					</div>
-					<!-- Card End -->
-
-					<!-- Card Start -->
-					<div class="card card--template">
-						<img class="card__image" src="img/template_example_1.jpg" />
-						<div class="">
-							<h3>Fiesta Vikinga</h3>
-							<p>Espectacular para tus amigos metaleros cabeza</p>
-							<h4>Empezando en</h4>
-							<h2>$4500</h2>
-							<h4>Planner</h4>
-							<p>MeliPlanner</p>
-						</div>
-						<div class="card__votes">
-							<div class="card__vote-positive"></div>
-							<div class="card__vote-negative"></div>
-						</div>
-						<div class="buttons">
-							<a href="#" class="buttons__select-medium">Elegir</a>
-						</div>
-					</div>
-					<!-- Card End -->
-
-					<!-- Card Start -->
-					<div class="card card--template">
-						<img class="card__image" src="img/template_example_1.jpg" />
-						<div class="">
-							<h3>Fiesta Vikinga</h3>
-							<p>Espectacular para tus amigos metaleros cabeza</p>
-							<h4>Empezando en</h4>
-							<h2>$4500</h2>
-							<h4>Planner</h4>
-							<p>MeliPlanner</p>
-						</div>
-						<div class="card__votes">
-							<div class="card__vote-positive"></div>
-							<div class="card__vote-negative"></div>
-						</div>
-						<div class="buttons">
-							<a href="#" class="buttons__select-medium">Elegir</a>
-						</div>
-					</div>
-					<!-- Card End -->
-				</div>
 			</div>
 		</div>
 	</div>

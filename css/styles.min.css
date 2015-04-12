@@ -206,6 +206,25 @@ header {
     .buttons .buttons__select-medium:hover {
       color: white;
       background: #9CCB3B; }
+  .buttons .buttons__select-submit {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    background-color: #3DA7DC;
+    cursor: pointer;
+    min-width: 40px;
+    text-align: center;
+    margin-left: 50%; }
+    .buttons .buttons__select-submit:hover {
+      color: white;
+      background: #9CCB3B; }
   .buttons .buttons__back {
     margin-top: 1em;
     margin-bottom: 0.5em;
@@ -257,6 +276,31 @@ header {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   border-radius: 6px;
   background: white; }
+  .card.card--create {
+    width: 100%;
+    width: 650px;
+    margin-left: calc( 50% - ( 650px / 2));
+    margin-top: 50px; }
+    .card.card--create label {
+      display: inline-block;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 16px; }
+    .card.card--create input {
+      margin-bottom: 20px;
+      height: 30px;
+      width: 150px;
+      border-radius: 6px;
+      border: 1px solid #BBBDC0;
+      text-align: center;
+      margin-left: calc( 50% - (150px / 2)); }
+    .card.card--create .card__input-title {
+      width: 400px;
+      height: 50px;
+      margin-left: calc( 50% - 200px );
+      margin-bottom: 30px; }
   .card.card--center {
     width: 100%;
     width: 350px;
