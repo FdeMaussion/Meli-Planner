@@ -8,14 +8,15 @@
         <link rel="stylesheet" href="css/styles.min.css">
         <script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.4.js"></script>
         <script>
+            var nickname=null;  
             MELI.init({client_id: 8220372496387122});
             MELI.login(function() {
 	MELI.get(
  		"/users/me",{},
-	    function(data) { alert("Hello "+data[2].first_name) }
+	    function(data) { alert("Hello "+data[2].first_name); nickname = data[2].nickname; window.location.href = 'set-session-access-token.php?token='+MELI.getToken()+'&nickname='.nickname;}
 	);
-                console.log('Seteo access token en la sesion: ' + MELI.getToken());
-                window.location.href = 'set-session-access-token.php?token='+MELI.getToken();
+                console.log(nickname);
+                //window.location.href = 'set-session-access-token.php?token='+MELI.getToken()+'&nickname='.nickname;
 });
         </script>
     </head>

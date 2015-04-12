@@ -11,12 +11,12 @@
             alert("Hello "+data[2].first_name);
             var token = MELI.getToken();
             console.log(token);
-            console.log('/collections/1103411729?access_token='+MELI.getToken());
-            MELI.post('/collections/1103411729?access_token='+MELI.getToken(),{},function(data){
+            console.log('/mercadopago_account/movements/search&type=income&access_token='+MELI.getToken());
+            MELI.post('/mercadopago_account/movements/search&type=income&access_token='+MELI.getToken(),{},function(data){
                 document.getElementById('id').innerHTML = data[2].id;
-                document.getElementById('collector_id').innerHTML = data[2].collector_id;
+                document.getElementById('result').innerHTML = data[2].results;
                 //document.getElementById('payer_id').innerHTML = data[2].payer.id;
-                document.getElementById('payer_email').innerHTML = data[2].email;
+                //document.getElementById('payer_email').innerHTML = data[2].email;
             });
         }
 	);
@@ -27,8 +27,6 @@
     </head>
     <body>
         <p id="id"></p>
-        <p id="collector_id"></p>
-        <p id="payer_id"></p>
-        <p id="payer_email"></p>
+        <p id="result"></p>
     </body>
 </html>

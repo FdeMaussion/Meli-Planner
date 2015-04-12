@@ -37,17 +37,17 @@
 $titulo = $_POST['titulo'];
 $fecha_crowd = $_POST['fecha-fin-crowd'];
 $fecha_evento = $_POST['fecha-evento'];
-$evento = $_POST['evento'];
+$subtipo_ev = $_POST['subtipo_ev'];
 
 echo $titulo.' - '.$fecha_crowd.' - '. $fecha_evento.' - '.$evento;
 ?>
         
-        <form action="enviar-mail.php" method="post">
+        <form action="ultimo-paso.php" method="post">
             <textarea name="lista-emails" id="lista-emails"></textarea>
             <input type="hidden" name="titulo" value="<?php echo $titulo; ?>">
             <input type="hidden" name="fecha-fin-crowd" value="<?php echo $fecha_crowd; ?>">
             <input type="hidden" name="fecha-evento" value="<?php echo $fecha_evento; ?>">
-            <input type="hidden" name="evento" value="<?php echo $evento; ?>">
+            <input type="hidden" name="subtipo_ev" value="<?php echo $subtipo_ev; ?>">
             
             <input type="submit" value="Continuar">
         </form>
