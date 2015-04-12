@@ -22,6 +22,22 @@ while($row = mysql_fetch_array($select))
 }
 mysql_free_result($select);
 
+$queryGetSubtipos = "SELECT * FROM sub_eventos WHERE id='".$sub_evento."'";
+$select = mysql_query($queryGetSubtipos);
+while($row=mysql_fetch_array($select))
+{
+    $nom_sub_evento = $row['nom_sub'];
+    $sub_id_tipo_evento = $row['id_tipo_evento'];
+}
+mysql_free_result($select);
+
+$queryGetTipos = "SELECT * FROM tipos_eventos WHERE id_tipo='".$sub_id_tipo_evento."'";
+$select =mysql_query($queryGetTipos);
+while($row=mysql_fetch_array($select))
+{
+    $nom_tipo_evento = $row['nombre'];
+}
+mysql_free_result($select);
 mysql_close();
 
 ?>
@@ -51,7 +67,8 @@ mysql_close();
         <p>Titulo: <?php echo $titulo;?></p>
         <p>Fecha: <?php echo $fecha_evento;?></p>
         <p>Fecha Fin Crowdfunding: <?php echo $fecha_crowd;?></p>
-        <p>Sub Evento: <?php echo $sub_evento;?></p>
+        <p>Sub Evento: <?php echo $nom_sub_evento;?></p>
+        <p>Evento: <?php echo $nom_tipo_evento;?></p>
         <br>
         <br>
         <a href="https://www.mercadopago.com/mla/checkout/pay?pref_id=181026991-733a8383-ea43-471c-bf0d-2759817cf342" name="MP-payButton" class="blue-l-rn-ar">300</a>
