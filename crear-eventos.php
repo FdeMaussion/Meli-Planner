@@ -53,6 +53,6 @@ if (isset($_SESSION['access-token']))
 <?php }
 else
 {
-    //echo 'No esta logueado';
+    echo 'No esta logueado';
     echo "<!doctype html><html><head><script>window.location.href='oauth-meli.html'</script></head></html>";
 }?>
