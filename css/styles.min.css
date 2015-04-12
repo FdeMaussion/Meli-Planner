@@ -248,6 +248,10 @@ header {
   margin: 1em 15% 0 15%; }
 .text .text__center {
   text-align: center; }
+.text .text__center-main-logeo {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 40px; }
 
 .card {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
