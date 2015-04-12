@@ -1,0 +1,15 @@
+[11-Apr-2015 22:00:30 America/Cordoba] PHP Warning:  mysql_connect(): Access denied for user 'mlplan'@'localhost' (using password: YES) in /home/alavuelt/public_html/planner/ultimo-paso.php on line 29
+[11-Apr-2015 22:01:06 America/Cordoba] PHP Warning:  mysql_connect(): Access denied for user 'mlplan'@'localhost' (using password: YES) in /home/alavuelt/public_html/planner/ultimo-paso.php on line 29
+[11-Apr-2015 22:01:14 America/Cordoba] PHP Warning:  mysql_connect(): Access denied for user 'mlplan'@'localhost' (using password: YES) in /home/alavuelt/public_html/planner/ultimo-paso.php on line 29
+[11-Apr-2015 23:14:37 America/Cordoba] PHP Warning:  mysql_connect(): Access denied for user 'mlplan'@'localhost' (using password: YES) in /home/alavuelt/public_html/planner/ultimo-paso.php on line 29
+[11-Apr-2015 23:16:27 America/Cordoba] PHP Warning:  mysql_connect(): Access denied for user 'mlplan'@'localhost' (using password: YES) in /home/alavuelt/public_html/planner/ultimo-paso.php on line 29
+[11-Apr-2015 23:19:10 America/Cordoba] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/alavuelt/public_html/planner/ultimo-paso.php on line 37
+[11-Apr-2015 23:22:27 America/Cordoba] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/alavuelt/public_html/planner/ultimo-paso.php on line 37
+[11-Apr-2015 23:25:32 America/Cordoba] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/alavuelt/public_html/planner/ultimo-paso.php on line 39
+[11-Apr-2015 23:25:47 America/Cordoba] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/alavuelt/public_html/planner/ultimo-paso.php on line 39
+[11-Apr-2015 23:26:09 America/Cordoba] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/alavuelt/public_html/planner/ultimo-paso.php on line 39
+[12-Apr-2015 00:44:45 America/Cordoba] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/alavuelt/public_html/planner/ultimo-paso.php on line 27
+[12-Apr-2015 00:52:30 America/Cordoba] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/alavuelt/public_html/planner/ultimo-paso.php on line 27
+[12-Apr-2015 01:01:29 America/Cordoba] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/alavuelt/public_html/planner/ultimo-paso.php on line 27
+[12-Apr-2015 01:01:29 America/Cordoba] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/alavuelt/public_html/planner/ultimo-paso.php on line 36
+[12-Apr-2015 01:01:29 America/Cordoba] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/alavuelt/public_html/planner/ultimo-paso.php on line 41

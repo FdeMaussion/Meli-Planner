@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.4.js"></script>
+        <script>
+            MELI.init({site_id: "MLA",client_id: 8220372496387122});
+            MELI.login(function() {
+	MELI.get(
+ 		"/users/me",{},
+	    function(data) {
+            alert("Hello "+data[2].first_name);
+            var token = MELI.getToken();
+            console.log(token);
+            MELI.post('/users/test_user?access_token='+MELI.getToken(),{site_id:"MLA"},function(data){
+                document.getElementById('id').innerHTML = data[2].id;
+                document.getElementById('nickname').innerHTML = data[2].nickname;
+                document.getElementById('password').innerHTML = data[2].password;
+                document.getElementById('site_status').innerHTML = data[2].site_status;
+            });
+        }
+	);
+});
+            
+            
+        </script>
+    </head>
+    <body>
+        <p id="id"></p>
+        <p id="nickname"></p>
+        <p id="password"></p>
+        <p id="site_status"></p>
+    </body>
+</html>

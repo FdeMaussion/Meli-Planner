@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.4.js"></script>
+        <script>
+            MELI.init({client_id: 8220372496387122});
+            MELI.login(function() {
+	MELI.get(
+ 		"/users/me",{},
+	    function(data) { alert("Hello "+data[2].first_name) }
+	);
+});
+        </script>
+    </head>
+</html>
