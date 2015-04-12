@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.layout {
+  width: 100%;
+  height: 100%;
+  float: left; }
+  .layout .layout__welcome-message {
+    width: 100%;
+    height: 45%;
+    background: white; }
+  .layout .layout__welcome-image {
+    width: 100%;
+    height: 60%;
+    background-image: url("../img/welcome-back-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 443px;
+    overflow: hidden; }
+  .layout .layout__sidebar {
+    float: left;
+    height: 100%;
+    width: 160px;
+    border-right: 1px solid #BBBDC0;
+    background: white; }
+  .layout .layout__content {
+    float: left;
+    width: calc( 100% - 160px);
+    height: 100%;
+    background: #FCFCFC; }
+  .layout .layout__progress {
+    width: 100%;
+    height: 50px;
+    text-align: center; }
+    .layout .layout__progress label {
+      font-size: 12px;
+      display: inline-block;
+      margin: 20px 25px 10px 35px;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      border-radius: 100%;
+      border: 1px solid #9CCB3B; }
+      .layout .layout__progress label.done {
+        color: white;
+        background: #9CCB3B; }
+  .layout .layout__title {
+    width: 100%;
+    height: 50px;
+    text-align: center; }
+    .layout .layout__title h2 {
+      display: inline-block;
+      font-size: 22px;
+      font-weight: 300;
+      margin-top: 15px; }
+  .layout .layout__sub-title {
+    width: 100%;
+    height: 50px;
+    text-align: center; }
+    .layout .layout__sub-title p {
+      font-weight: 300px;
+      font-size: 12px; }
+  .layout .layout__center {
+    height: 100%; }
+  .layout .layout__cards-container {
+    margin-left: 10%;
+    width: 90%;
+    height: calc( 100% - 200px );
+    overflow-y: auto; }
+
+header {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #BBBDC0; }
+  header .header__brand {
+    float: left;
+    height: 100%;
+    width: 160px;
+    background: #BBBDC0; }
+  header .header__options {
+    float: right;
+    height: 100%;
+    width: 250px; }
+
+.buttons {
+  text-align: center; }
+  .buttons .buttons__clear {
+    margin: 1em;
+    display: inline-block;
+    border: 1px solid #BBBDC0;
+    border-radius: 6px;
+    height: auto;
+    width: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 8px 20px 8px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #BBBDC0; }
+    .buttons .buttons__clear:hover {
+      color: white;
+      background: #BBBDC0; }
+  .buttons .buttons__main-call {
+    margin-top: 6em;
+    margin-bottom: 2em;
+    display: inline-block;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 12px 60px 12px 60px;
+    color: white;
+    background-color: #ED1B2D;
+    cursor: pointer; }
+    .buttons .buttons__main-call:hover {
+      color: white;
+      background: #9CCB3B; }
+  .buttons .buttons__main-option {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 60px 12px 60px;
+    color: white;
+    background-color: #3DA7DC;
+    cursor: pointer;
+    min-width: 130px;
+    text-align: center; }
+    .buttons .buttons__main-option:hover {
+      color: white;
+      background: #9CCB3B; }
+    .buttons .buttons__main-option:last-child {
+      margin-bottom: 2em;
+      border: 1px solid #BBBDC0; }
+    .buttons .buttons__main-option:first-child {
+      margin-top: 2em; }
+  .buttons .buttons__select-medium {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 60px 12px 60px;
+    color: white;
+    background-color: #3DA7DC;
+    cursor: pointer;
+    min-width: 40px;
+    text-align: center; }
+    .buttons .buttons__select-medium:hover {
+      color: white;
+      background: #9CCB3B; }
+  .buttons .buttons__back {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 60px 12px 60px;
+    color: white;
+    background-color: #ED1B2D;
+    cursor: pointer;
+    min-width: 40px;
+    text-align: center; }
+    .buttons .buttons__back:hover {
+      color: white;
+      background: #9CCB3B; }
+  .buttons .buttons__main-alternative {
+    border: 1px solid #BBBDC0;
+    background-color: white;
+    color: #BBBDC0; }
+    .buttons .buttons__main-alternative:hover {
+      background-color: #BBBDC0;
+      color: white; }
+
+.text .text__center-main {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #BBBDC0;
+  text-align: center; }
+.text .text__subtitle-center {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #BBBDC0;
+  text-align: center;
+  margin: 1em 15% 0 15%; }
+.text .text__center {
+  text-align: center; }
+
+.card {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  background: white; }
+  .card.card--center {
+    width: 100%;
+    width: 350px;
+    margin-left: calc( 50% - ( 350px / 2));
+    margin-top: 10px; }
+  .card.card--template {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 450px;
+    margin: 20px 10px 10px 10px; }
+    .card.card--template h3, .card.card--template p, .card.card--template h4, .card.card--template h2 {
+      font-weight: 400;
+      margin-left: 15px; }
+    .card.card--template h2 {
+      margin-top: 10px;
+      font-size: 22px; }
+    .card.card--template h3 {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #3DA7DC; }
+    .card.card--template p {
+      margin-top: 10px;
+      font-size: 12px; }
+    .card.card--template h4 {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 500; }
+  .card .card__image {
+    width: 100%;
+    height: auto; }
+
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+.float__left {
+  float: left; }
+
+.float__right {
+  float: right; }
+
+a {
+  text-decoration: none; }
+
+div {
+  box-sizing: border-box; }
+
+p, h1, h2, h3, h4, a, label {
+  font-family: "Roboto", sans-serif; }
+
+/*# sourceMappingURL=styles.min.css.map */
