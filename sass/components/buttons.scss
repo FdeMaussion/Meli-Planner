@@ -1,4 +1,5 @@
 .buttons {
+  text-align: center;
   .buttons__clear {
     margin: 1em;
     display: inline-block;
@@ -12,6 +13,7 @@
     padding: $text-small-padding;
     margin-top: 10px;
     cursor: pointer;
+    color: $grey-medium;
     &:hover {
       color: white;
       background: $grey-medium;
@@ -19,9 +21,8 @@
   }
 
   .buttons__main-call {
-    margin-top: 4em;
+    margin-top: 6em;
     margin-bottom: 2em;
-    margin-left: calc( 50% - 129px );
     display: inline-block;
     border-radius: 50px;
     height: auto;
@@ -37,5 +38,43 @@
       color: white;
       background: $positive;
     }
+  }
+  .buttons__main-option {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    font-family: $font-roboto;
+    font-weight: 500;
+    font-size: $font-medium;
+    padding: $text-big-padding;
+    color: white;
+    background-color: $option;
+    cursor: pointer;
+    min-width: 130px;
+    text-align: center;
+    &:hover {
+      color: white;
+      background: $positive;
+    }
+    &:last-child {
+      margin-bottom: 2em;
+      border: $border__clear;
+    }
+    &:first-child {
+      margin-top: 2em;
+    }
+  }
+
+  .buttons__main-alternative {
+      border: $border__clear;
+      background-color: white;
+      color: $grey-medium;
+      &:hover {
+        background-color: $grey-medium;
+        color: white;
+      }
   }
 }
