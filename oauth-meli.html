@@ -9,6 +9,8 @@
  		"/users/me",{},
 	    function(data) { alert("Hello "+data[2].first_name) }
 	);
+                console.log('Seteo access token en la sesion: ' + MELI.getToken());
+                window.location.href = 'set-session-access-token.php?token='+MELI.getToken();
 });
         </script>
     </head>

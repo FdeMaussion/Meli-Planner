@@ -25,6 +25,23 @@ mysql_free_result($select);
 mysql_close();
 
 ?>
+
+<script type="text/javascript">
+(function(){
+    function $MPBR_load(){
+        window.$MPBR_loaded !== true && (function(){   
+                var s = document.createElement("script");
+                s.type = "text/javascript";s.async = true;
+                s.src = ("https:"==document.location.protocol?"https://www.mercadopago.com/org-img/jsapi/mptools/buttons/":"http://mp-tools.mlstatic.com/buttons/")+"render.js";
+                var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPBR_loaded = true;
+        })();
+    }window.$MPBR_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPBR_load) : window.addEventListener('load', $MPBR_load, false)) : null;
+})();    
+</script>
+<script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.4.js">
+    alert(MELI.getToken());
+</script>
+
 <!doctype html>
 <html>
     <head>
@@ -35,5 +52,10 @@ mysql_close();
         <p>Fecha: <?php echo $fecha_evento;?></p>
         <p>Fecha Fin Crowdfunding: <?php echo $fecha_crowd;?></p>
         <p>Sub Evento: <?php echo $sub_evento;?></p>
+        <br>
+        <br>
+        <a href="https://www.mercadopago.com/mla/checkout/pay?pref_id=181026991-733a8383-ea43-471c-bf0d-2759817cf342" name="MP-payButton" class="blue-l-rn-ar">300</a>
+        <a href="https://www.mercadopago.com/mla/checkout/pay?pref_id=181026991-342f7b9e-432a-4388-b52b-2638429f2ed4" name="MP-payButton" class="blue-l-rn-ar">200</a>
+        <a href="https://www.mercadopago.com/mla/checkout/pay?pref_id=181026991-9704edbb-24ac-4694-a352-ff076ee91862" name="MP-payButton" class="blue-l-rn-ar">100</a>
     </body>
 </html>
