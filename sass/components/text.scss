@@ -1,0 +1,18 @@
+.text {
+	.text__center-main {
+		font-family: $font-roboto;
+		font-weight: 300;
+		font-size: $font-main;
+		color: $grey-medium;
+		text-align: center;
+	}
+
+	.text__subtitle-center {
+		font-family: $font-roboto;
+		font-weight: 300;
+		font-size: $font-medium;
+		color: $grey-medium;
+		text-align: center;
+		margin: 1em 20% 0 20%;
+	}
+}
